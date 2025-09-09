@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thonny-vscode"
+version = "1.0"
+description = "Vscode theme for thonny"
+readme = "README.md"
+requires-python = ">=3.0"
+license = { text = "MIT" }
+authors = [
+  { name="Link", email="mc.link34500@gmail.com" }
+]
+keywords = [
+  "IDE", "education", "programming", "Thonny", "dark", "theme", "dracula"
+]
+classifiers = [
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Topic :: Education",
+  "Topic :: Software Development",
+  "Topic :: Software Development :: Embedded Systems"
+]
+dependencies = [
+  "thonny >= 3.0.0"
+]
+
+[project.urls]
+Homepage = "https://link34500.dev"
+Download = "https://link34500.dev"
+
+[tool.setuptools.packages.find]
+include = ["thonnycontrib.code"]
